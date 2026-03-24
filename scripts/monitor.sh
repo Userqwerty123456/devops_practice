@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Monitor run at $(date)"
+
 echo "=== TOP 5 PROCESSES BY CPU ==="
 ps aux --sort=-%cpu | head -6
 

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  monitor:
+    build: .
+    container_name: my_monitor
+    volumes:
+      - ./html:/app/html
+    networks:
+      - monitor-net
+
+  web:
+    image: nginx:alpine
+    container_name: nginx_monitor
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    networks:
+      - monitor-net
+    depends_on:
+      - monitor
+
+networks:
+  monitor-net:

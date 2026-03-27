@@ -16,7 +16,3 @@ ps aux | wc -l
 echo ""
 echo "=== ZOMBIE PROCESSES ==="
 ps aux | awk '$8=="Z" {print}'
-
-chmod +x ~/devops_practice/scripts/monitor.sh
-
-

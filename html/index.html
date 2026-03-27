@@ -1,0 +1,19 @@
+Monitor run at Fri Mar 27 14:48:44 UTC 2026
+=== TOP 5 PROCESSES BY CPU ===
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4364  3200 ?        Ss   14:20   0:00 /bin/bash /app/monitor_loop.sh
+root       315  0.0  0.0   4364  2944 ?        S    14:48   0:00 /bin/bash /app/monitor.sh
+root       317  0.0  0.0   7064  2688 ?        R    14:48   0:00 ps aux --sort=-%cpu
+root       318  0.0  0.0   2804  1280 ?        S    14:48   0:00 head -6
+
+=== TOP 5 PROCESSES BY MEMORY ===
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4364  3200 ?        Ss   14:20   0:00 /bin/bash /app/monitor_loop.sh
+root       315  0.0  0.0   4364  2944 ?        S    14:48   0:00 /bin/bash /app/monitor.sh
+root       319  0.0  0.0   7064  2944 ?        R    14:48   0:00 ps aux --sort=-%mem
+root       320  0.0  0.0   2804  1280 ?        S    14:48   0:00 head -6
+
+=== TOTAL PROCESSES ===
+5
+
+=== ZOMBIE PROCESSES ===
